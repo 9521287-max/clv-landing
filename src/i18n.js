@@ -1,5 +1,3 @@
-// i18n.js — безопасная версия: EN + временный IT (копия EN)
-
 const en = {
   nav: {
     home: "Home",
@@ -26,7 +24,7 @@ const en = {
   },
   highlights: {
     title: "Highlights",
-    list: [
+    items: [
       "Panoramic lake views from every residence",
       "Spacious private terraces",
       "Contemporary architectural design",
@@ -125,8 +123,7 @@ const en = {
 
 export const translations = {
   en,
-  it: en // временно: итальянский = английскому, чтобы не падало при переключении
+  it: en
 };
 
-// На всякий случай оставляем и default-экспорт, и именованный
 export default translations;
