@@ -71,11 +71,16 @@ export default function App() {
 
 
   <Section id="highlights">
-    <h2 className="font-serif text-2xl md:text-3xl">{t.highlights.title}</h2>
-    <ul className="mt-6 grid md:grid-cols-3 gap-4">
-      {t.highlights.items.map((item,i)=>(<li key={i} className="bg-white shadow-soft rounded-2xl p-5 border border-black/5">{item}</li>))}
-    </ul>
-  </Section>
+  <h2 className="font-serif text-3xl md:text-4xl text-center mb-10">{t.highlights.title}</h2>
+  <div className="grid md:grid-cols-3 gap-6">
+    {t.highlights.items.map((item, i) => (
+      <div key={i} className="bg-white rounded-2xl shadow-soft p-6 border border-black/5 text-center hover:shadow-lg transition-shadow duration-300">
+        <div className="text-lg font-medium text-slate-800">{item.title}</div>
+        <p className="mt-3 text-slate-600 leading-relaxed">{item.text}</p>
+      </div>
+    ))}
+  </div>
+</Section>
 
   <Section id="residences">
     <div className="grid md:grid-cols-2 gap-8 items-center">
