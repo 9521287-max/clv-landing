@@ -53,14 +53,22 @@ export default function App() {
    </div>
   </header>
 
-  <section id="home" className="min-h-[88vh] grid place-items-end pt-24 relative">
-    <img src="/images/0010000.jpg" alt="Hero warm" className="absolute inset-0 w-full h-full object-cover"/>
-    <div className="absolute inset-0 bg-gradient-to-t from-black/35 to-black/0" />
-    <div className="relative z-10 max-w-5xl mx-auto px-6 pb-16 text-white">
-      <h1 className="font-serif text-4xl md:text-6xl leading-tight drop-shadow">{t.hero.title}</h1>
-      <p className="mt-4 max-w-3xl text-lg md:text-xl text-white/90">{t.hero.subtitle}</p>
-    </div>
-  </section>
+<section id="home" className="min-h-[88vh] grid place-items-end pt-24 relative">
+  <img src="/images/0010000.jpg" alt="Hero warm" className="absolute inset-0 w-full h-full object-cover"/>
+  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-black/0" />
+  <div className="relative z-10 max-w-5xl mx-auto px-6 pb-32 text-white text-center">
+    <h1 className="font-serif text-4xl md:text-6xl leading-tight drop-shadow-lg">
+      {t.hero.title}
+    </h1>
+  </div>
+</section>
+
+<section className="bg-ivory py-12">
+  <div className="max-w-4xl mx-auto px-6 text-center text-slate-800 text-lg leading-relaxed">
+    {t.hero.subtitle}
+  </div>
+</section>
+
 
   <Section id="highlights">
     <h2 className="font-serif text-2xl md:text-3xl">{t.highlights.title}</h2>
