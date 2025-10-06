@@ -1,10 +1,36 @@
+import React, { useState, useEffect } from 'react';
+import { translations as tr } from './i18n';
 
-import React,{useState} from 'react'
-import {translations as tr} from './i18n'
-const Section=({id,children})=>(<section id={id} className="py-20 md:py-28"><div className="max-w-6xl mx-auto px-6">{children}</div></section>)
-const NavLink=({href,children})=>(<a href={href} className="text-sm md:text-base hover:text-olive transition-colors">{children}</a>)
-export default function App(){
- const [lang,setLang]=useState('en'); const t=tr[lang];
+const Section = ({ id, children }) => (
+  <section id={id} className="py-20 md:py-28">
+    <div className="max-w-6xl mx-auto px-6">{children}</div>
+  </section>
+);
+
+const NavLink = ({ href, children }) => (
+  <a href={href} className="text-sm md:text-base hover:text-olive transition-colors">
+    {children}
+  </a>
+);
+
+export default function App() {
+  const [lang, setLang] = useState(() => {
+    try {
+      const saved = localStorage.getItem('lang');
+      return saved === 'it' || saved === 'en' ? saved : 'en';
+    } catch {
+      return 'en';
+    }
+  });
+
+  useEffect(() => {
+    try { localStorage.setItem('lang', lang); } catch {}
+  }, [lang]);
+
+  const t = tr?.[lang] ?? tr?.en ?? null;
+
+  if (!t || !t.nav || !t.hero) return null;
+
  return (<div>
   <header className="fixed top-0 inset-x-0 z-50 backdrop-blur bg-ivory/80 border-b border-black/5">
    <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
