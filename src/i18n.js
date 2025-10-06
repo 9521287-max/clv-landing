@@ -122,10 +122,19 @@ location: {
   cta: "Download",
   comingSoon: "Plan coming soon"
 },
-  progress: {
-    title: "Project Progress",
-    text: "CLV Residents is currently under development. Renderings shown are for illustrative purposes only and may be subject to subtle refinements during construction, without altering the essence of the project."
-  },
+ progress: {
+  title: "Project Progress",
+  text:
+    "CLV Residents is currently under development. The overall concept, architecture and landscape strategy are defined. Interior specifications and detailing are being refined to ensure the highest quality and coherence of the vision.",
+  etaLabel: "Estimated completion",
+  etaValue: "Q4 2026",
+  statusLabel: "Current status",
+  statusValue: "Under development",
+  imageAlt: "Project render — Como Lake View Residents",
+  imageCaption: "Concept render",
+  note:
+    "Renderings are for illustration purposes and may be subtly refined during construction without altering the project vision."
+}
 
   faq: {
     title: "FAQ",
@@ -280,10 +289,19 @@ location: {
   comingSoon: "Planimetria in arrivo"
 },
   
-  progress: {
-    title: "Avanzamento Progetto",
-    text: "CLV Residents è attualmente in sviluppo. Le immagini sono render a scopo illustrativo e potranno essere oggetto di leggere ottimizzazioni in fase costruttiva, senza alterare l’essenza del progetto."
-  },
+progress: {
+  title: "Avanzamento Progetto",
+  text:
+    "CLV Residents è attualmente in sviluppo. Il concept generale, l’architettura e il paesaggio sono definiti. Le specifiche degli interni e i dettagli esecutivi vengono ottimizzati per garantire la massima qualità e coerenza della visione.",
+  etaLabel: "Consegna stimata",
+  etaValue: "Q4 2026",
+  statusLabel: "Stato attuale",
+  statusValue: "In sviluppo",
+  imageAlt: "Render del progetto — Como Lake View Residents",
+  imageCaption: "Render di concept",
+  note:
+    "I render sono a scopo illustrativo e potranno essere oggetto di leggere ottimizzazioni in fase costruttiva, senza alterare la visione del progetto."
+}
 
   faq: {
     title: "FAQ",
