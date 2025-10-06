@@ -108,33 +108,40 @@ export default function App() {
 </Section>
 
 <Section id="amenities">
-  <h2 className="font-serif text-3xl md:text-4xl mb-10 text-center">{t.amenities.title}</h2>
-  <div className="grid md:grid-cols-3 gap-8">
-    
-    <div className="bg-white rounded-2xl border border-black/5 shadow-soft overflow-hidden hover:shadow-lg transition-shadow">
-      <img src="/images/0010004.jpg" alt="Covered Parking" className="w-full h-56 object-cover"/>
-      <div className="p-6">
-        <h3 className="font-serif text-xl mb-3">{t.amenities.garageTitle}</h3>
-        <p className="text-slate-700 leading-relaxed">{t.amenities.garage}</p>
+  <h2 className="font-serif text-3xl mb-8">{t.amenities.title}</h2>
+  <div className="grid md:grid-cols-3 gap-6">
+    <div className="bg-white rounded-2xl border border-black/5 p-6 shadow-soft">
+      <div className="aspect-[4/3] w-full overflow-hidden rounded-2xl mb-4">
+        <img
+          src="/images/0010004.jpg"
+          className="w-full h-full object-cover"
+          alt="Garage"
+        />
       </div>
+      <p>{t.amenities.garage}</p>
     </div>
 
-    <div className="bg-white rounded-2xl border border-black/5 shadow-soft overflow-hidden hover:shadow-lg transition-shadow">
-      <img src="/images/0010003.jpg" alt="Landscaped Garden" className="w-full h-56 object-cover"/>
-      <div className="p-6">
-        <h3 className="font-serif text-xl mb-3">{t.amenities.gardenTitle}</h3>
-        <p className="text-slate-700 leading-relaxed">{t.amenities.garden}</p>
+    <div className="bg-white rounded-2xl border border-black/5 p-6 shadow-soft">
+      <div className="aspect-[4/3] w-full overflow-hidden rounded-2xl mb-4">
+        <img
+          src="/images/0010003.jpg"
+          className="w-full h-full object-cover"
+          alt="Garden"
+        />
       </div>
+      <p>{t.amenities.garden}</p>
     </div>
 
-    <div className="bg-white rounded-2xl border border-black/5 shadow-soft overflow-hidden hover:shadow-lg transition-shadow">
-      <img src="/images/0010006.jpg" className="rounded-2xl mb-4" alt="Pool"/>
-      <div className="p-6">
-        <h3 className="font-serif text-xl mb-3">{t.amenities.poolTitle}</h3>
-        <p className="text-slate-700 leading-relaxed">{t.amenities.pool}</p>
+    <div className="bg-white rounded-2xl border border-black/5 p-6 shadow-soft">
+      <div className="aspect-[4/3] w-full overflow-hidden rounded-2xl mb-4">
+        <img
+          src="/images/0010006.jpg"
+          className="w-full h-full object-cover"
+          alt="Pool"
+        />
       </div>
+      <p>{t.amenities.pool}</p>
     </div>
-
   </div>
 </Section>
 
