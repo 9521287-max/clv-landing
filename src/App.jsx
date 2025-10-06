@@ -14,6 +14,7 @@ const NavLink = ({ href, children }) => (
 );
 
 export default function App() {
+  const [filter, setFilter] = useState("all");
   const [lang, setLang] = useState(() => {
     try {
       const saved = localStorage.getItem('lang');
