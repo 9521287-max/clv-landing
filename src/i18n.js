@@ -73,10 +73,10 @@ amenities: {
   pool: "An outdoor pool with a sunbathing area and loungers — a serene retreat to swim, relax, and enjoy the lake views in complete privacy."
 },
 
-  location: {
-    title: "Location",
-    text: "Located on the western shore of Lake Como in Argegno, CLV Residents is moments away from the historic town center and the Swiss border. Stroll along the lakeside promenade, enjoy local cafes, or embark on a ferry — all just steps from your home."
-  },
+location: {
+  title: "Location",
+  text: "Set on the western shore of Lake Como in Argegno, CLV Residents places you moments from the historic town center and the Swiss border. Stroll the lakeside promenade, pause at intimate cafés, embark on a ferry, or retreat home to quiet elegance. A rare vantage point where the drama of the mountains meets the calm of the water."
+},
 
   plans: {
     title: "Levels & Floor Plans",
@@ -208,10 +208,10 @@ amenities: {
   pool: "Piscina all’aperto con area prendisole e lettini — un rifugio sereno per nuotare, rilassarsi e ammirare la vista sul lago nella massima privacy."
 },
 
-  location: {
-    title: "Posizione",
-    text: "Sulla sponda occidentale del Lago di Como ad Argegno, a pochi passi dal centro storico e dal confine svizzero. Passeggiata sul lungolago, caffè e imbarcadero a breve distanza dalla propria casa."
-  },
+location: {
+  title: "Posizione",
+  text: "Sulla sponda occidentale del Lago di Como, ad Argegno, CLV Residents ti mette a pochi passi dal centro storico e dal confine svizzero. Passeggia sul lungolago, fermati nei caffè, sali sul traghetto e rientra a casa nella quiete dell’eleganza. Un punto di vista raro, dove la forza delle montagne incontra la calma dell’acqua."
+},
 
   plans: {
     title: "Livelli e Planimetrie",
