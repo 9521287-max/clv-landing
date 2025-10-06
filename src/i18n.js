@@ -1,33 +1,98 @@
 
 export const translations = {
-  en:{nav:{home:'Home',residences:'Residences',architecture:'Architecture',amenities:'Amenities',location:'Location',plans:'Floor Plans',progress:'Progress',faq:'FAQ',contacts:'Contacts'},
-  hero:{title:'Como Lake View Residents',subtitle:'A limited collection of lake‑view residences in Argegno, Como. Every home opens to the lake with a private terrace.'},
-  highlights:{title:'Highlights',items:['Panoramic lake view','Private terraces','Contemporary architecture','Underground parking','Garden & pool','Privacy and calm']},
-  residences:{title:'Residences',text:'Each residence is oriented to the lake. Floor‑to‑ceiling windows and deep terraces extend everyday life outdoors.'},
-  architecture:{title:'Architecture & Landscape',text:'A terraced composition preserves privacy and open views. Natural tones echo the topography.'},
-  amenities:{title:'Amenities',garage:'Underground garage: direct, weather‑protected access.',garden:'Layered planting, stone paths and quiet corners.',pool:'Pool & sun lounge among greenery.'},
-  location:{title:'Location — Argegno, Como',text:'Western shore of Lake Como, minutes from Como and the Swiss border.'},
-  plans:{title:'Floor Plans',intro:'Four apartments (A1–A4) and a detached villa on two levels (V1/V2). Placeholders shown.',cta:'Open plan',
-    units:[{code:'A1',label:'Lake‑facing residence'},{code:'A2',label:'Lake‑facing residence'},{code:'A3',label:'Lake‑facing residence'},{code:'A4',label:'Lake‑facing residence'},{code:'V1',label:'Detached villa — two levels (V1/V2)'}],
-    levels:['0F — Parking level: 4 cars','Level 1 — A1 + parking: 10 cars','Level 2 — A2 + technical & storage','Level 3 — A3','Level 4 — A4','Villa — two levels: V1 / V2']
+  en: {
+  intro: {
+    title: "Como Lake View Residents",
+    text: "Como Lake View Residents is an exclusive residential concept nestled above the serene waters of Lake Como in Argegno. Designed for those who value privacy, contemporary architecture, and a close connection with nature, CLV offers a rare opportunity to live surrounded by beauty — every residence with panoramic lake views and generous private terraces."
   },
-  progress:{title:'Progress',text:'Design and construction updates.'},
-  faq:{title:'FAQ',q1:'What is included?',a1:'Underground garage, garden, pool.',q2:'Does every residence face the lake?',a2:'Yes, with a private terrace.',q3:'Where is it located?',a3:'Argegno, Como.',q4:'Is this commercial?',a4:'No, informational only.'},
-  contacts:{title:'Contacts',text:'For institutional and press enquiries: ———',formTitle:'Contact form',formNote:'Placeholder form.',name:'Name',email:'Email',message:'Message',send:'Send'},
-  footer:{rights:'© CLV Residents. All rights reserved.'}},
-  it:{nav:{home:'Home',residences:'Residenze',architecture:'Architettura',amenities:'Servizi',location:'Posizione',plans:'Planimetrie',progress:'Aggiornamenti',faq:'FAQ',contacts:'Contatti'},
-  hero:{title:'Como Lake View Residents',subtitle:'Una collezione limitata di residenze con vista lago ad Argegno, Como. Ogni unità ha una terrazza privata.'},
-  highlights:{title:'Punti di forza',items:['Vista lago panoramica','Terrazze private','Architettura contemporanea','Autorimessa interrata','Giardino e piscina','Privacy e tranquillità']},
-  residences:{title:'Residenze',text:'Ogni residenza è orientata verso il lago. Grandi vetrate e terrazze profonde estendono la vita all’aperto.'},
-  architecture:{title:'Architettura e Paesaggio',text:'Una composizione terrazzata preserva privacy e viste aperte. Toni naturali in dialogo con la topografia.'},
-  amenities:{title:'Servizi',garage:'Autorimessa interrata: accesso diretto e protetto.',garden:'Verde stratificato, percorsi in pietra e angoli di quiete.',pool:'Piscina e solarium immersi nel verde.'},
-  location:{title:'Posizione — Argegno, Como',text:'Sponda occidentale del Lago di Como, a pochi minuti da Como e dal confine svizzero.'},
-  plans:{title:'Planimetrie',intro:'Quattro appartamenti (A1–A4) e una villa indipendente su due livelli (V1/V2). Immagini segnaposto.',cta:'Apri planimetria',
-    units:[{code:'A1',label:'Residenza fronte lago'},{code:'A2',label:'Residenza fronte lago'},{code:'A3',label:'Residenza fronte lago'},{code:'A4',label:'Residenza fronte lago'},{code:'V1',label:'Villa indipendente — due livelli (V1/V2)'}],
-    levels:['0F — livello parcheggio: 4 auto','Livello 1 — A1 + parcheggio: 10 auto','Livello 2 — A2 + locale tecnico e depositi','Livello 3 — A3','Livello 4 — A4','Villa — due livelli: V1 / V2']
+  hero: {
+    title: "Contemporary private residences above Lake Como",
+    subtitle: "Five boutique apartments and one detached villa, each with a private terrace and breathtaking panoramic views of the water. A life of calm elegance, where nature and architecture exist in perfect harmony."
   },
-  progress:{title:'Aggiornamenti',text:'Aggiornamenti di progetto e di cantiere.'},
-  faq:{title:'FAQ',q1:'Cosa comprende?',a1:'Autorimessa interrata, giardino, piscina.',q2:'Ogni residenza guarda il lago?',a2:'Sì, con terrazza privata.',q3:'Dove si trova?',a3:'Argegno, Como.',q4:'Il sito è commerciale?',a4:'No, solo informativo.'},
-  contacts:{title:'Contatti',text:'Per richieste istituzionali e stampa: ———',formTitle:'Modulo di contatto',formNote:'Modulo segnaposto.',name:'Nome',email:'Email',message:'Messaggio',send:'Invia'},
-  footer:{rights:'© CLV Residents. Tutti i diritti riservati.'}}
+  highlights: {
+    title: "Highlights",
+    list: [
+      "Panoramic lake views from every residence",
+      "Spacious private terraces",
+      "Contemporary architectural design",
+      "Covered parking with direct access",
+      "Landscaped gardens",
+      "Outdoor pool with sunbathing area and loungers",
+      "Absolute privacy and exclusivity"
+    ]
+  },
+  residences: {
+    title: "Residences",
+    text: "Each residence is designed to frame the beauty of Lake Como. Floor-to-ceiling glass fills the interiors with light, while seamless transitions between inside and outside extend your living space onto expansive private terraces."
+  },
+  floorplans: {
+    title: "Levels & Floor Plans",
+    levels: [
+      {
+        name: "Level 0 — Parking",
+        description: "Covered parking for 4 cars."
+      },
+      {
+        name: "Level 1 — Apartment A1 + Parking",
+        description: "Covered parking for 10 cars. Apartment A1: 66.57 m². Layout: kitchen-living area, 2 bedrooms, 2 bathrooms. Private terrace: 27 m². Oriented toward panoramic lake views."
+      },
+      {
+        name: "Level 2 — Apartment A2 + Utility Rooms",
+        description: "Utility rooms provided for all residences. Apartment A2: 91.69 m². Layout: kitchen-living area, 2 bedrooms, 2 bathrooms. Private terrace: 110 m². Panoramic views over Lake Como."
+      },
+      {
+        name: "Level 3 — Apartment A3",
+        description: "Apartment A3: 97.61 m². Layout: kitchen-living area, 3 bedrooms, 2 bathrooms. Private terrace: 125 m². Expansive views of the lake and surrounding landscape."
+      },
+      {
+        name: "Level 4 — Apartment A4",
+        description: "Apartment A4: 70.34 m². Layout: kitchen-living area, 2 bedrooms, 2 bathrooms. Private terrace: 68 m². Elevated position with breathtaking panoramic views."
+      },
+      {
+        name: "Detached Villa — Two Residences (V1 & V2)",
+        description: "V1 (Level 1): 77.50 m² — kitchen-living area, 2 bedrooms, 2 bathrooms, private terrace 53 m². V2 (Level 2): 77.32 m² — kitchen-living area, 2 bedrooms, 2 bathrooms, private terrace 38 m². Stand-alone villa with two residences, both offering unobstructed lake views and generous outdoor spaces."
+      }
+    ]
+  },
+  architecture: {
+    title: "Architecture & Landscape",
+    text: "The building’s terraced composition follows the natural slope of the land, ensuring every residence enjoys unobstructed views. Minimalist forms, panoramic glazing, and landscaped gardens merge to create a refined dialogue between architecture and nature."
+  },
+  amenities: {
+    title: "Outdoor Spaces",
+    text: "The residents’ outdoor amenities include a landscaped garden and a serene pool area with sun loungers — a perfect place to swim, sunbathe, and enjoy the breathtaking views of Lake Como in complete privacy."
+  },
+  location: {
+    title: "Location",
+    text: "Located on the western shore of Lake Como in Argegno, CLV Residents is moments away from the historic town center and the Swiss border. Stroll along the lakeside promenade, enjoy local cafés, or embark on a ferry — all just steps from your home."
+  },
+  progress: {
+    title: "Project Progress",
+    text: "CLV Residents is currently under development. Renderings shown are for illustrative purposes only and may be subject to subtle refinements during construction, without altering the essence of the project."
+  },
+  faq: {
+    title: "FAQ",
+    questions: [
+      {
+        q: "What does the development include?",
+        a: "Covered parking, landscaped gardens, outdoor pool with sun loungers."
+      },
+      {
+        q: "Will every residence have lake views?",
+        a: "Yes — all homes are oriented to maximize panoramic views."
+      },
+      {
+        q: "Where is it located?",
+        a: "Argegno, western shore of Lake Como."
+      },
+      {
+        q: "Is this a sales site?",
+        a: "No — this is an informational presentation of the project’s concept and key features."
+      }
+    ]
+  },
+  contacts: {
+    title: "Contacts",
+    text: "For partnership, press, or institutional inquiries: (Contact form placeholder — will be activated in the next release.)"
+  }
 }
