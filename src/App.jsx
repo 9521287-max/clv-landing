@@ -206,11 +206,38 @@ export default function App() {
 </Section>
 
   <Section id="progress">
-    <div className="grid md:grid-cols-2 gap-8 items-center">
-      <div><h2 className="font-serif text-3xl mb-4">{t.progress.title}</h2><p className="leading-8">{t.progress.text}</p></div>
-      <img src="/images/0010001.jpg" className="w-full rounded-2xl shadow-soft" alt="Progress"/>
+  <div className="grid md:grid-cols-2 gap-8 items-center">
+    <figure className="relative">
+      <img
+        src="/images/0010001.jpg"
+        alt={t.progress.imageAlt}
+        className="w-full rounded-2xl shadow-soft"
+      />
+      <figcaption className="absolute bottom-3 left-3 text-xs px-2 py-1 rounded bg-black/60 text-white backdrop-blur">
+        {t.progress.imageCaption}
+      </figcaption>
+    </figure>
+
+    <div>
+      <h2 className="font-serif text-3xl mb-3">{t.progress.title}</h2>
+      <p className="leading-8 mb-5">{t.progress.text}</p>
+
+      <div className="flex flex-wrap gap-4">
+        <div className="rounded-xl border border-black/5 bg-white px-4 py-3 shadow-soft">
+          <div className="text-xs uppercase tracking-wide text-slate-500">{t.progress.etaLabel}</div>
+          <div className="text-lg font-medium">{t.progress.etaValue}</div>
+        </div>
+
+        <div className="rounded-xl border border-black/5 bg-white px-4 py-3 shadow-soft">
+          <div className="text-xs uppercase tracking-wide text-slate-500">{t.progress.statusLabel}</div>
+          <div className="text-lg font-medium">{t.progress.statusValue}</div>
+        </div>
+      </div>
+
+      <p className="text-sm text-slate-600 mt-5">{t.progress.note}</p>
     </div>
-  </Section>
+  </div>
+</Section>
 
   <Section id="faq">
     <h2 className="font-serif text-3xl mb-6">{t.faq.title}</h2>
