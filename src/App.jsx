@@ -324,5 +324,17 @@ export default function App() {
   </div>
 </Section>
 
-  <footer className="py-10 border-t border-black/5 text-sm"><div className="max-w-6xl mx-auto px-6 flex items-center justify-between"><div>{t.footer.rights}</div><div className="text-slate-500">EN / IT • clvresidents.com</div></div></footer>
- </div>)}
+  <footer className="border-t border-black/10 py-8 text-sm text-slate-600">
+  <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+    <div className="tracking-wide">
+      © Como Lake View Residents · {new Date().getFullYear()} · All rights reserved.
+    </div>
+    <div className="flex items-center gap-4 text-slate-400">
+      <a href="#home" className="hover:text-slate-700 transition-colors">Home</a>
+      <a href="#residences" className="hover:text-slate-700 transition-colors">Residences</a>
+      <a href="#contacts" className="hover:text-slate-700 transition-colors">Contacts</a>
+      <span className="text-slate-300">|</span>
+      <span>EN / IT</span>
+    </div>
+  </div>
+</footer>
