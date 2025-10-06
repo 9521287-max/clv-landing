@@ -101,7 +101,7 @@ export default function App() {
     </div>
     <div className="relative rounded-2xl overflow-hidden shadow-soft border border-black/5">
       <div className="aspect-[16/10]">
-        <img src="/images/0010006.jpg" alt="Architecture" className="w-full h-full object-cover"/>
+       <img src="/images/0010005.jpg" className="w-full rounded-2xl shadow-soft" alt="Architecture"/>
       </div>
     </div>
   </div>
@@ -128,7 +128,7 @@ export default function App() {
     </div>
 
     <div className="bg-white rounded-2xl border border-black/5 shadow-soft overflow-hidden hover:shadow-lg transition-shadow">
-      <img src="/images/0010005.jpg" alt="Pool Area" className="w-full h-56 object-cover"/>
+      <img src="/images/0010006.jpg" className="rounded-2xl mb-4" alt="Pool"/>
       <div className="p-6">
         <h3 className="font-serif text-xl mb-3">{t.amenities.poolTitle}</h3>
         <p className="text-slate-700 leading-relaxed">{t.amenities.pool}</p>
