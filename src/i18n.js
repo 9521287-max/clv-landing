@@ -18,10 +18,10 @@ const en = {
     subtitle: "Four boutique apartments and one detached villa with two residences, each with a private terrace and panoramic views of the water."
   },
 
-  hero: {
-    title: "Contemporary private residences above Lake Como",
-    subtitle: "Four boutique apartments and one detached villa with two residences, each with a private terrace and breathtaking panoramic views of the water. A life of calm elegance, where nature and architecture exist in perfect harmony."
-  },
+hero: {
+  title: "Contemporary private residences above Lake Como",
+  subtitle: "Four boutique apartments and a stand-alone villa with two residences — each with a private terrace and unobstructed panoramic views. A refined living experience where elegance, nature, and architecture exist in perfect harmony."
+},
 
   highlights: {
     title: "Highlights",
@@ -133,10 +133,10 @@ const it = {
     subtitle: "Quattro appartamenti boutique e una villa indipendente con due residenze, ciascuna con terrazza privata e vista panoramica sul lago."
   },
 
-  hero: {
-    title: "Residenze private contemporanee sopra il Lago di Como",
-    subtitle: "Quattro appartamenti boutique e una villa indipendente con due residenze, ciascuna con terrazza privata e straordinarie viste panoramiche sull’acqua. Uno stile di vita di elegante tranquillità, dove natura e architettura vivono in perfetta armonia."
-  },
+ hero: {
+  title: "Residenze private contemporanee sopra il Lago di Como",
+  subtitle: "Quattro appartamenti boutique e una villa indipendente con due residenze, ciascuna con terrazza privata e viste panoramiche senza ostacoli. Un’esclusiva esperienza abitativa dove eleganza, natura e architettura convivono in perfetta armonia."
+},
 
   highlights: {
     title: "Punti di forza",
