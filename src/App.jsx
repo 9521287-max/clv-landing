@@ -106,14 +106,36 @@ export default function App() {
   </div>
 </Section>
 
-  <Section id="amenities">
-    <h2 className="font-serif text-3xl mb-8">{t.amenities.title}</h2>
-    <div className="grid md:grid-cols-3 gap-6">
-      <div className="bg-white rounded-2xl border border-black/5 p-6 shadow-soft"><img src="/images/0010004.jpg" className="rounded-xl mb-4" alt="Garage"/><p>{t.amenities.garage}</p></div>
-      <div className="bg-white rounded-2xl border border-black/5 p-6 shadow-soft"><img src="/images/0010003.jpg" className="rounded-xl mb-4" alt="Garden"/><p>{t.amenities.garden}</p></div>
-      <div className="bg-white rounded-2xl border border-black/5 p-6 shadow-soft"><img src="/images/0010005.jpg" className="rounded-2xl mb-4" alt="Pool"/><p>{t.amenities.pool}</p></div>
+<Section id="amenities">
+  <h2 className="font-serif text-3xl md:text-4xl mb-10 text-center">{t.amenities.title}</h2>
+  <div className="grid md:grid-cols-3 gap-8">
+    
+    <div className="bg-white rounded-2xl border border-black/5 shadow-soft overflow-hidden hover:shadow-lg transition-shadow">
+      <img src="/images/0010004.jpg" alt="Covered Parking" className="w-full h-56 object-cover"/>
+      <div className="p-6">
+        <h3 className="font-serif text-xl mb-3">{t.amenities.garageTitle}</h3>
+        <p className="text-slate-700 leading-relaxed">{t.amenities.garage}</p>
+      </div>
     </div>
-  </Section>
+
+    <div className="bg-white rounded-2xl border border-black/5 shadow-soft overflow-hidden hover:shadow-lg transition-shadow">
+      <img src="/images/0010003.jpg" alt="Landscaped Garden" className="w-full h-56 object-cover"/>
+      <div className="p-6">
+        <h3 className="font-serif text-xl mb-3">{t.amenities.gardenTitle}</h3>
+        <p className="text-slate-700 leading-relaxed">{t.amenities.garden}</p>
+      </div>
+    </div>
+
+    <div className="bg-white rounded-2xl border border-black/5 shadow-soft overflow-hidden hover:shadow-lg transition-shadow">
+      <img src="/images/0010005.jpg" alt="Pool Area" className="w-full h-56 object-cover"/>
+      <div className="p-6">
+        <h3 className="font-serif text-xl mb-3">{t.amenities.poolTitle}</h3>
+        <p className="text-slate-700 leading-relaxed">{t.amenities.pool}</p>
+      </div>
+    </div>
+
+  </div>
+</Section>
 
   <Section id="location">
     <div className="grid md:grid-cols-2 gap-8 items-center">
