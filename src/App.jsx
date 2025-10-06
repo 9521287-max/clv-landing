@@ -82,12 +82,15 @@ export default function App() {
   </div>
 </Section>
 
-  <Section id="residences">
-    <div className="grid md:grid-cols-2 gap-8 items-center">
-      <img src="/images/0010003.jpg" className="w-full rounded-2xl shadow-soft" alt="Residences"/>
-      <div><h2 className="font-serif text-3xl mb-4">{t.residences.title}</h2><p className="leading-8">{t.residences.text}</p></div>
+<Section id="residences">
+  <div className="grid md:grid-cols-2 gap-12 items-center">
+    <img src="/images/0010003.jpg" className="w-full rounded-2xl shadow-soft" alt="Residences"/>
+    <div>
+      <h2 className="font-serif text-3xl md:text-4xl mb-6">{t.residences.title}</h2>
+      <p className="text-lg leading-relaxed text-slate-700">{t.residences.text}</p>
     </div>
-  </Section>
+  </div>
+</Section>
 
   <Section id="architecture">
     <div className="grid md:grid-cols-2 gap-8 items-center">
