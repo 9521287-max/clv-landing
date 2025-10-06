@@ -63,12 +63,15 @@ architecture: {
   text: "A terraced composition follows the natural slope of the hillside, opening every residence to unobstructed views of Lake Como. Clean, minimal volumes and panoramic glazing create a pure architectural language, while the landscaped grounds tie the building gently to its setting. Materials and proportions are curated to feel calm, timeless and distinctly contemporary."
 },
 
-  amenities: {
-    title: "Outdoor Spaces",
-    garage: "Covered parking with convenient access for residents and guests.",
-    garden: "Landscaped gardens with Mediterranean greenery and crafted stone paths.",
-    pool: "Outdoor pool with a sunbathing area and loungers — a perfect place to swim, sunbathe, and enjoy the lake view in complete privacy."
-  },
+amenities: {
+  title: "Outdoor Spaces",
+  garageTitle: "Covered Parking",
+  garage: "Convenient covered parking spaces with direct access for residents and guests, seamlessly integrated into the landscape.",
+  gardenTitle: "Landscaped Gardens",
+  garden: "Mediterranean greenery and carefully designed stone pathways create a tranquil, natural environment around the residences.",
+  poolTitle: "Pool & Sun Lounge",
+  pool: "An outdoor pool with a sunbathing area and loungers — a serene retreat to swim, relax, and enjoy the lake views in complete privacy."
+},
 
   location: {
     title: "Location",
@@ -195,12 +198,15 @@ architecture: {
   text: "Una composizione terrazzata segue la pendenza naturale del pendio, aprendo ogni residenza a viste libere sul Lago di Como. Volumi essenziali e ampie superfici vetrate definiscono un linguaggio architettonico puro, mentre il paesaggio curato lega l’edificio al contesto con delicatezza. Materiali e proporzioni sono scelti per trasmettere calma, eleganza senza tempo e un carattere autenticamente contemporaneo."
 },
 
-  amenities: {
-    title: "Spazi Esterni",
-    garage: "Parcheggio coperto con accesso comodo per residenti e ospiti.",
-    garden: "Giardini paesaggistici con essenze mediterranee e sentieri in pietra.",
-    pool: "Piscina all’aperto con area prendisole e lettini: il luogo ideale per nuotare, rilassarsi e ammirare il lago nella massima privacy."
-  },
+amenities: {
+  title: "Spazi Esterni",
+  garageTitle: "Parcheggio Coperto",
+  garage: "Comodi posti auto coperti con accesso diretto per residenti e ospiti, perfettamente integrati nel paesaggio.",
+  gardenTitle: "Giardini Paesaggistici",
+  garden: "Verde mediterraneo e sentieri in pietra accuratamente progettati creano un ambiente naturale e rilassante intorno alle residenze.",
+  poolTitle: "Piscina e Area Prendisole",
+  pool: "Piscina all’aperto con area prendisole e lettini — un rifugio sereno per nuotare, rilassarsi e ammirare la vista sul lago nella massima privacy."
+},
 
   location: {
     title: "Posizione",
