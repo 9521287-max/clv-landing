@@ -122,7 +122,8 @@ location: {
   cta: "Download",
   comingSoon: "Plan coming soon"
 },
- progress: {
+  
+progress: {
   title: "Project Progress",
   text:
     "CLV Residents is currently under development. The overall concept, architecture and landscape strategy are defined. Interior specifications and detailing are being refined to ensure the highest quality and coherence of the vision.",
