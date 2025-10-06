@@ -1,4 +1,4 @@
-// i18n.js — named export (важно: без default!)
+// i18n.js — даём ДВА экспорта: named и default, чтобы любой импорт работал
 export const translations = {
   en: {
     intro: {
@@ -109,5 +109,8 @@ export const translations = {
         "For partnership, press, or institutional inquiries: (Contact form placeholder — will be activated in the next release.)"
     }
   },
-  it: {}
+  it: {} // итальянский добавим позже
 };
+
+// Два экспорта — чтобы точно совпасть с импортом в App.jsx
+export default translations;
