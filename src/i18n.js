@@ -135,7 +135,7 @@ progress: {
   imageCaption: "Concept render",
   note:
     "Renderings are for illustration purposes and may be subtly refined during construction without altering the project vision."
-}
+},
 
   faq: {
     title: "FAQ",
@@ -302,7 +302,7 @@ progress: {
   imageCaption: "Render di concept",
   note:
     "I render sono a scopo illustrativo e potranno essere oggetto di leggere ottimizzazioni in fase costruttiva, senza alterare la visione del progetto."
-}
+},
 
   faq: {
     title: "FAQ",
