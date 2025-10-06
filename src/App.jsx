@@ -242,14 +242,30 @@ export default function App() {
   </div>
 </Section>
 
-  <Section id="faq">
-    <h2 className="font-serif text-3xl mb-6">{t.faq.title}</h2>
-    <div className="grid md:grid-cols-2 gap-6">
-      {[ [t.faq.q1,t.faq.a1],[t.faq.q2,t.faq.a2],[t.faq.q3,t.faq.a3],[t.faq.q4,t.faq.a4] ].map(([q,a],i)=>(
-        <div key={i} className="bg-white rounded-2xl p-6 border border-black/5 shadow-soft"><div className="font-medium mb-2">{q}</div><p className="text-slate-700">{a}</p></div>
-      ))}
-    </div>
-  </Section>
+ <Section id="faq">
+  <h2 className="font-serif text-4xl md:text-5xl mb-12 text-center text-slate-900">
+    {t.faq.title}
+  </h2>
+
+  <div className="max-w-4xl mx-auto space-y-6">
+    {[ 
+      [t.faq.q1, t.faq.a1],
+      [t.faq.q2, t.faq.a2],
+      [t.faq.q3, t.faq.a3],
+      [t.faq.q4, t.faq.a4] 
+    ].map(([q, a], i) => (
+      <div 
+        key={i} 
+        className="group bg-white rounded-2xl border border-black/5 shadow-soft hover:shadow-lg transition-shadow duration-300 p-8"
+      >
+        <div className="text-xl font-serif text-slate-900 mb-3 group-hover:text-olive transition-colors">
+          {q}
+        </div>
+        <p className="text-base text-slate-700 leading-relaxed">{a}</p>
+      </div>
+    ))}
+  </div>
+</Section>
 
   <Section id="contacts">
     <div className="grid md:grid-cols-2 gap-8">
