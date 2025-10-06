@@ -53,10 +53,10 @@ hero: {
   ]
 },
 
-  residences: {
-    title: "Residences",
-    text: "Each residence is designed to frame the beauty of Lake Como. Floor-to-ceiling glass fills the interiors with light, while seamless transitions between inside and outside extend your living space onto expansive private terraces."
-  },
+residences: {
+  title: "Residences",
+  text: "Each residence is a private retreat designed to embrace the beauty of Lake Como. Expansive floor-to-ceiling windows flood the interiors with natural light, while seamless transitions between interior and exterior spaces extend your living area onto generous private terraces. Here, modern comfort meets timeless elegance, and every day unfolds with breathtaking panoramic views."
+},
 
   architecture: {
     title: "Architecture & Landscape",
@@ -185,10 +185,10 @@ const it = {
   ]
 },
 
-  residences: {
-    title: "Residenze",
-    text: "Ogni residenza è progettata per incorniciare la bellezza del Lago di Como. Le vetrate a tutta altezza inondano gli interni di luce, mentre la continuità tra ambienti interni ed esterni estende lo spazio di vita su generose terrazze private."
-  },
+residences: {
+  title: "Residenze",
+  text: "Ogni residenza è un rifugio privato pensato per abbracciare la bellezza del Lago di Como. Le ampie vetrate a tutta altezza riempiono gli interni di luce naturale, mentre la perfetta continuità tra spazi interni ed esterni estende l’area abitativa su generose terrazze private. Qui il comfort moderno incontra l’eleganza senza tempo, e ogni giornata si apre con viste panoramiche mozzafiato."
+},
 
   architecture: {
     title: "Architettura e Paesaggio",
