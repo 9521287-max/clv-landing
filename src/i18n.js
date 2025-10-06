@@ -113,8 +113,6 @@ const en = {
   }
 };
 
-export const translations = { en, it };
-export default translations;
 const it = {
   nav: {
     home: "Home",
