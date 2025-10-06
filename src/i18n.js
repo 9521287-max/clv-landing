@@ -58,10 +58,10 @@ residences: {
   text: "Each residence is a private retreat designed to embrace the beauty of Lake Como. Expansive floor-to-ceiling windows flood the interiors with natural light, while seamless transitions between interior and exterior spaces extend your living area onto generous private terraces. Here, modern comfort meets timeless elegance, and every day unfolds with breathtaking panoramic views."
 },
 
-  architecture: {
-    title: "Architecture & Landscape",
-    text: "The building’s terraced composition follows the natural slope of the land, ensuring every residence enjoys unobstructed views. Minimalist forms, panoramic glazing, and landscaped gardens merge to create a refined dialogue between architecture and nature."
-  },
+architecture: {
+  title: "Architecture & Landscape",
+  text: "A terraced composition follows the natural slope of the hillside, opening every residence to unobstructed views of Lake Como. Clean, minimal volumes and panoramic glazing create a pure architectural language, while the landscaped grounds tie the building gently to its setting. Materials and proportions are curated to feel calm, timeless and distinctly contemporary."
+},
 
   amenities: {
     title: "Outdoor Spaces",
@@ -190,10 +190,10 @@ residences: {
   text: "Ogni residenza è un rifugio privato pensato per abbracciare la bellezza del Lago di Como. Le ampie vetrate a tutta altezza riempiono gli interni di luce naturale, mentre la perfetta continuità tra spazi interni ed esterni estende l’area abitativa su generose terrazze private. Qui il comfort moderno incontra l’eleganza senza tempo, e ogni giornata si apre con viste panoramiche mozzafiato."
 },
 
-  architecture: {
-    title: "Architettura e Paesaggio",
-    text: "La composizione terrazzata segue la naturale pendenza del terreno, garantendo a ogni residenza una vista libera e privilegiata. Volumi essenziali, ampie superfici vetrate e giardini curati dialogano in modo raffinato con il paesaggio."
-  },
+architecture: {
+  title: "Architettura e Paesaggio",
+  text: "Una composizione terrazzata segue la pendenza naturale del pendio, aprendo ogni residenza a viste libere sul Lago di Como. Volumi essenziali e ampie superfici vetrate definiscono un linguaggio architettonico puro, mentre il paesaggio curato lega l’edificio al contesto con delicatezza. Materiali e proporzioni sono scelti per trasmettere calma, eleganza senza tempo e un carattere autenticamente contemporaneo."
+},
 
   amenities: {
     title: "Spazi Esterni",
