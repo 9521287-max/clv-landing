@@ -1,5 +1,5 @@
-
-eexport const translations = {
+// i18n.js — named export (важно: без default!)
+export const translations = {
   en: {
     intro: {
       title: "Como Lake View Residents",
@@ -109,9 +109,5 @@ eexport const translations = {
         "For partnership, press, or institutional inquiries: (Contact form placeholder — will be activated in the next release.)"
     }
   },
-
-  // Italian will be added next:
   it: {}
 };
-
-export default translations;
