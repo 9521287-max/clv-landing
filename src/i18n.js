@@ -79,27 +79,49 @@ location: {
 },
 
   plans: {
-    title: "Levels & Floor Plans",
-    intro: "Every residence features panoramic lake views and private terraces. Below are the project levels and units.",
-    levels: [
-      "Level 0 — Parking: covered parking for 4 cars",
-      "Level 1 — Apartment A1 + Parking: covered parking for 10 cars. Apartment A1 66.57 m2, layout: kitchen-living area, 2 bedrooms, 2 bathrooms. Private terrace 27 m2. Oriented toward panoramic lake views.",
-      "Level 2 — Apartment A2 + Utility Rooms: utility rooms provided for all residences. Apartment A2 91.69 m2, layout: kitchen-living area, 2 bedrooms, 2 bathrooms. Private terrace 110 m2. Panoramic views over Lake Como.",
-      "Level 3 — Apartment A3: 97.61 m2, layout: kitchen-living area, 3 bedrooms, 2 bathrooms. Private terrace 125 m2. Expansive views of the lake and surrounding landscape.",
-      "Level 4 — Apartment A4: 70.34 m2, layout: kitchen-living area, 2 bedrooms, 2 bathrooms. Private terrace 68 m2. Elevated position with breathtaking panoramic views.",
-      "Detached Villa — Two Residences (V1 & V2): V1 (Level 1) 77.50 m2 — kitchen-living area, 2 bedrooms, 2 bathrooms, private terrace 53 m2. V2 (Level 2) 77.32 m2 — kitchen-living area, 2 bedrooms, 2 bathrooms, private terrace 38 m2. Stand-alone villa with two residences, both offering unobstructed lake views and generous outdoor spaces."
-    ],
-    units: [
-      { code: "A1", label: "2 bedrooms · 2 bathrooms · Terrace 27 m2" },
-      { code: "A2", label: "2 bedrooms · 2 bathrooms · Terrace 110 m2" },
-      { code: "A3", label: "3 bedrooms · 2 bathrooms · Terrace 125 m2" },
-      { code: "A4", label: "2 bedrooms · 2 bathrooms · Terrace 68 m2" },
-      { code: "V1", label: "Villa level 1 · 2 bedrooms · 2 bathrooms · Terrace 53 m2" },
-      { code: "V2", label: "Villa level 2 · 2 bedrooms · 2 bathrooms · Terrace 38 m2" }
-    ],
-    cta: "Download plan"
-  },
+  title: "Levels & Floor Plans",
+  intro: "Every residence features panoramic lake views and private terraces. Explore levels and unit plans below.",
+  all: "All",
+  levelFilters: [
+    { id: "L0", label: "Level 0" },
+    { id: "L1", label: "Level 1" },
+    { id: "L2", label: "Level 2" },
+    { id: "L3", label: "Level 3" },
+    { id: "L4", label: "Level 4" },
+    { id: "V",  label: "Villa" }
+  ],
+  levels: [
+    { title: "Level 0 — Parking", text: "Covered parking for 4 cars." },
+    { title: "Level 1 — Apartment A1 + Parking", text: "Covered parking for 10 cars. A1: 66.57 m² — kitchen-living area, 2 bedrooms, 2 bathrooms. Terrace 27 m². Oriented to panoramic lake views." },
+    { title: "Level 2 — Apartment A2 + Utility Rooms", text: "Utility rooms provided for all residences. A2: 91.69 m² — kitchen-living area, 2 bedrooms, 2 bathrooms. Terrace 110 m²." },
+    { title: "Level 3 — Apartment A3", text: "A3: 97.61 m² — kitchen-living area, 3 bedrooms, 2 bathrooms. Terrace 125 m². Expansive lake and landscape views." },
+    { title: "Level 4 — Apartment A4", text: "A4: 70.34 m² — kitchen-living area, 2 bedrooms, 2 bathrooms. Terrace 68 m². Elevated position with wide panoramic views." },
+    { title: "Detached Villa — Two Residences (V1 & V2)", text: "V1 (Level 1) 77.50 m² — 2 bedrooms, 2 bathrooms, terrace 53 m². V2 (Level 2) 77.32 m² — 2 bedrooms, 2 bathrooms, terrace 38 m²." }
+  ],
+  units: [
+    { code: "L0", level: "L0", title: "Parking plan (4 cars)", image: "/images/plans/units/L0-parking.png", meta: "" },
 
+    { code: "A1", level: "L1", title: "Apartment A1", image: "/images/plans/units/A1-plan.png",
+      meta: "66.57 m² · 2 bedrooms · 2 bathrooms · Terrace 27 m²" },
+
+    { code: "A2", level: "L2", title: "Apartment A2", image: "/images/plans/units/A2-plan.png",
+      meta: "91.69 m² · 2 bedrooms · 2 bathrooms · Terrace 110 m²" },
+
+    { code: "A3", level: "L3", title: "Apartment A3", image: "/images/plans/units/A3-plan.png",
+      meta: "97.61 m² · 3 bedrooms · 2 bathrooms · Terrace 125 m²" },
+
+    { code: "A4", level: "L4", title: "Apartment A4", image: "/images/plans/units/A4-plan.png",
+      meta: "70.34 m² · 2 bedrooms · 2 bathrooms · Terrace 68 m²" },
+
+    { code: "V1", level: "V",  title: "Villa — V1 (Level 1)", image: "/images/plans/units/V1-plan.png",
+      meta: "77.50 m² · 2 bedrooms · 2 bathrooms · Terrace 53 m²" },
+
+    { code: "V2", level: "V",  title: "Villa — V2 (Level 2)", image: "/images/plans/units/V2-plan.png",
+      meta: "77.32 m² · 2 bedrooms · 2 bathrooms · Terrace 38 m²" }
+  ],
+  cta: "Download",
+  comingSoon: "Plan coming soon"
+},
   progress: {
     title: "Project Progress",
     text: "CLV Residents is currently under development. Renderings shown are for illustrative purposes only and may be subject to subtle refinements during construction, without altering the essence of the project."
@@ -214,27 +236,50 @@ location: {
 },
 
   plans: {
-    title: "Livelli e Planimetrie",
-    intro: "Ogni residenza gode di vista lago panoramica e di una terrazza privata. Di seguito i livelli del progetto e le unità.",
-    levels: [
-      "Livello 0 — Parcheggio: coperto per 4 auto",
-      "Livello 1 — Appartamento A1 + Parcheggio: parcheggio coperto per 10 auto. A1 66,57 m²: soggiorno con cucina, 2 camere, 2 bagni. Terrazza privata 27 m². Orientato verso viste panoramiche sul lago.",
-      "Livello 2 — Appartamento A2 + Locali tecnici: locali di servizio previsti per tutte le residenze. A2 91,69 m²: soggiorno con cucina, 2 camere, 2 bagni. Terrazza privata 110 m². Vista panoramica sul Lago di Como.",
-      "Livello 3 — Appartamento A3: 97,61 m²; soggiorno con cucina, 3 camere, 2 bagni. Terrazza privata 125 m². Ampie vedute sul lago e sul paesaggio circostante.",
-      "Livello 4 — Appartamento A4: 70,34 m²; soggiorno con cucina, 2 camere, 2 bagni. Terrazza privata 68 m². Posizione dominante con viste mozzafiato.",
-      "Villa Indipendente — Due Residenze (V1 e V2): V1 (Livello 1) 77,50 m² — soggiorno con cucina, 2 camere, 2 bagni, terrazza 53 m². V2 (Livello 2) 77,32 m² — soggiorno con cucina, 2 camere, 2 bagni, terrazza 38 m². Villa autonoma con due residenze, entrambe con viste libere sul lago e generosi spazi esterni."
-    ],
-    units: [
-      { code: "A1", label: "2 camere · 2 bagni · Terrazza 27 m²" },
-      { code: "A2", label: "2 camere · 2 bagni · Terrazza 110 m²" },
-      { code: "A3", label: "3 camere · 2 bagni · Terrazza 125 m²" },
-      { code: "A4", label: "2 camere · 2 bagni · Terrazza 68 m²" },
-      { code: "V1", label: "Villa livello 1 · 2 camere · 2 bagni · Terrazza 53 m²" },
-      { code: "V2", label: "Villa livello 2 · 2 camere · 2 bagni · Terrazza 38 m²" }
-    ],
-    cta: "Scarica la planimetria"
-  },
+  title: "Livelli e Planimetrie",
+  intro: "Ogni residenza gode di vista lago panoramica e di una terrazza privata. Esplora i livelli e le planimetrie qui sotto.",
+  all: "Tutti",
+  levelFilters: [
+    { id: "L0", label: "Livello 0" },
+    { id: "L1", label: "Livello 1" },
+    { id: "L2", label: "Livello 2" },
+    { id: "L3", label: "Livello 3" },
+    { id: "L4", label: "Livello 4" },
+    { id: "V",  label: "Villa" }
+  ],
+  levels: [
+    { title: "Livello 0 — Parcheggio", text: "Parcheggio coperto per 4 auto." },
+    { title: "Livello 1 — Appartamento A1 + Parcheggio", text: "Parcheggio coperto per 10 auto. A1: 66,57 m² — soggiorno con cucina, 2 camere, 2 bagni. Terrazza 27 m². Orientato verso viste panoramiche." },
+    { title: "Livello 2 — Appartamento A2 + Locali Tecnici", text: "Locali di servizio previsti per tutte le residenze. A2: 91,69 m² — soggiorno con cucina, 2 camere, 2 bagni. Terrazza 110 m²." },
+    { title: "Livello 3 — Appartamento A3", text: "A3: 97,61 m² — soggiorno con cucina, 3 camere, 2 bagni. Terrazza 125 m². Ampie vedute sul lago e sul paesaggio." },
+    { title: "Livello 4 — Appartamento A4", text: "A4: 70,34 m² — soggiorno con cucina, 2 camere, 2 bagni. Terrazza 68 m². Posizione dominante con viste aperte." },
+    { title: "Villa Indipendente — Due Residenze (V1 e V2)", text: "V1 (Livello 1) 77,50 m² — 2 camere, 2 bagni, terrazza 53 m². V2 (Livello 2) 77,32 m² — 2 camere, 2 bagni, terrazza 38 m²." }
+  ],
+  units: [
+    { code: "L0", level: "L0", title: "Planimetria parcheggio (4 auto)", image: "/images/plans/units/L0-parcheggio.png", meta: "" },
 
+    { code: "A1", level: "L1", title: "Appartamento A1", image: "/images/plans/units/A1-plan.png",
+      meta: "66,57 m² · 2 camere · 2 bagni · Terrazza 27 m²" },
+
+    { code: "A2", level: "L2", title: "Appartamento A2", image: "/images/plans/units/A2-plan.png",
+      meta: "91,69 m² · 2 camere · 2 bagni · Terrazza 110 m²" },
+
+    { code: "A3", level: "L3", title: "Appartamento A3", image: "/images/plans/units/A3-plan.png",
+      meta: "97,61 m² · 3 camere · 2 bagni · Terrazza 125 m²" },
+
+    { code: "A4", level: "L4", title: "Appartamento A4", image: "/images/plans/units/A4-plan.png",
+      meta: "70,34 m² · 2 camere · 2 bagni · Terrazza 68 m²" },
+
+    { code: "V1", level: "V",  title: "Villa — V1 (Livello 1)", image: "/images/plans/units/V1-plan.png",
+      meta: "77,50 m² · 2 camere · 2 bagni · Terrazza 53 m²" },
+
+    { code: "V2", level: "V",  title: "Villa — V2 (Livello 2)", image: "/images/plans/units/V2-plan.png",
+      meta: "77,32 m² · 2 camere · 2 bagni · Terrazza 38 m²" }
+  ],
+  cta: "Scarica",
+  comingSoon: "Planimetria in arrivo"
+},
+  
   progress: {
     title: "Avanzamento Progetto",
     text: "CLV Residents è attualmente in sviluppo. Le immagini sono render a scopo illustrativo e potranno essere oggetto di leggere ottimizzazioni in fase costruttiva, senza alterare l’essenza del progetto."
