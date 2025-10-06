@@ -24,17 +24,34 @@ hero: {
 },
 
   highlights: {
-    title: "Highlights",
-    items: [
-      "Panoramic lake views from every residence",
-      "Spacious private terraces",
-      "Contemporary architectural design",
-      "Covered parking with direct access",
-      "Landscaped gardens",
-      "Outdoor pool with sunbathing area and loungers",
-      "Absolute privacy and exclusivity"
-    ]
-  },
+  title: "Highlights",
+  items: [
+    {
+      title: "Panoramic lake views",
+      text: "Each residence enjoys breathtaking panoramic views of Lake Como, framed by floor-to-ceiling windows."
+    },
+    {
+      title: "Spacious private terraces",
+      text: "Generous outdoor spaces extend your living area, creating seamless transitions between indoors and nature."
+    },
+    {
+      title: "Contemporary architecture",
+      text: "Refined minimalist design blends modern elegance with the timeless beauty of the surrounding landscape."
+    },
+    {
+      title: "Covered parking",
+      text: "Secure covered parking with direct access ensures convenience for residents and guests."
+    },
+    {
+      title: "Landscaped gardens",
+      text: "Mediterranean greenery and curated landscaping create a serene and private environment."
+    },
+    {
+      title: "Outdoor pool & sunbathing area",
+      text: "A tranquil pool area with loungers — perfect for swimming, sunbathing, and enjoying the view in privacy."
+    }
+  ]
+},
 
   residences: {
     title: "Residences",
@@ -138,18 +155,35 @@ const it = {
   subtitle: "Quattro appartamenti boutique e una villa indipendente con due residenze, ciascuna con terrazza privata e viste panoramiche senza ostacoli. Un’esclusiva esperienza abitativa dove eleganza, natura e architettura convivono in perfetta armonia."
 },
 
-  highlights: {
-    title: "Punti di forza",
-    items: [
-      "Vista lago panoramica da ogni residenza",
-      "Ampie terrazze private",
-      "Architettura contemporanea",
-      "Parcheggio coperto con accesso diretto",
-      "Giardini paesaggistici",
-      "Piscina all’aperto con area solarium e lettini",
-      "Assoluta privacy ed esclusività"
-    ]
-  },
+ highlights: {
+  title: "Punti di forza",
+  items: [
+    {
+      title: "Vista panoramica sul lago",
+      text: "Ogni residenza gode di viste mozzafiato sul Lago di Como, incorniciate da ampie vetrate a tutta altezza."
+    },
+    {
+      title: "Ampie terrazze private",
+      text: "Spazi esterni generosi ampliano l’area abitativa, creando una perfetta continuità tra interni e natura."
+    },
+    {
+      title: "Architettura contemporanea",
+      text: "Un design minimalista e raffinato fonde l’eleganza moderna con la bellezza senza tempo del paesaggio circostante."
+    },
+    {
+      title: "Parcheggio coperto",
+      text: "Parcheggi coperti e sicuri con accesso diretto garantiscono comodità per residenti e ospiti."
+    },
+    {
+      title: "Giardini paesaggistici",
+      text: "Essenze mediterranee e spazi verdi curati creano un ambiente sereno e riservato."
+    },
+    {
+      title: "Piscina e area prendisole",
+      text: "Un’area piscina tranquilla con lettini — il luogo ideale per nuotare, rilassarsi e godersi la vista nella massima privacy."
+    }
+  ]
+},
 
   residences: {
     title: "Residenze",
