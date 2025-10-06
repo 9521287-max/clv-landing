@@ -267,20 +267,62 @@ export default function App() {
   </div>
 </Section>
 
-  <Section id="contacts">
-    <div className="grid md:grid-cols-2 gap-8">
-      <div><h2 className="font-serif text-3xl mb-4">{t.contacts.title}</h2><p className="leading-8">{t.contacts.text}</p>
-      <div className="mt-8 text-sm text-slate-600">Project — Como Lake View Residents (CLV Residents). Location — Argegno, Como, Italy.</div></div>
-      <form onSubmit={(e)=>{e.preventDefault(); alert(lang==='en'?'Form submitted (placeholder)':'Modulo inviato (segnaposto)')}} className="bg-white rounded-2xl p-6 border border-black/5 shadow-soft">
-        <div className="text-lg mb-2">{t.contacts.formTitle}</div>
-        <p className="text-sm text-slate-600 mb-6">{t.contacts.formNote}</p>
-        <label className="block text-sm mb-1">{t.contacts.name}</label><input className="w-full border rounded-xl px-3 py-2 mb-4" placeholder="—" required/>
-        <label className="block text-sm mb-1">{t.contacts.email}</label><input type="email" className="w-full border rounded-xl px-3 py-2 mb-4" placeholder="—" required/>
-        <label className="block text-sm mb-1">{t.contacts.message}</label><textarea className="w-full border rounded-xl px-3 py-2 mb-4 min-h-[120px]" placeholder="—"/>
-        <button className="px-4 py-2 rounded-xl bg-slate text-white hover:opacity-90">{t.contacts.send}</button>
-      </form>
+ <Section id="contacts">
+  <div className="grid md:grid-cols-2 gap-16 items-start">
+    <div>
+      <h2 className="font-serif text-4xl md:text-5xl mb-6 text-slate-900">
+        {t.contacts.title}
+      </h2>
+      <p className="text-lg md:text-xl leading-relaxed text-slate-700 mb-8">
+        {t.contacts.text}
+      </p>
+      <div className="text-sm text-slate-500 italic">
+        © Como Lake View Residents — Argegno, Lake Como, Italy.
+      </div>
     </div>
-  </Section>
+
+    <form
+      onSubmit={(e) => {
+        e.preventDefault();
+        alert(lang === "en" ? "Form submitted (placeholder)" : "Modulo inviato (segnaposto)");
+      }}
+      className="bg-white rounded-3xl shadow-soft border border-black/5 p-8 hover:shadow-xl transition-shadow duration-300"
+    >
+      <div className="text-2xl font-serif mb-4 text-slate-900">
+        {t.contacts.formTitle}
+      </div>
+      <p className="text-sm text-slate-600 mb-8">{t.contacts.formNote}</p>
+
+      <label className="block text-sm font-medium mb-2">{t.contacts.name}</label>
+      <input
+        className="w-full border border-black/10 rounded-xl px-4 py-3 mb-6 focus:outline-none focus:ring-2 focus:ring-olive"
+        placeholder="—"
+        required
+      />
+
+      <label className="block text-sm font-medium mb-2">{t.contacts.email}</label>
+      <input
+        type="email"
+        className="w-full border border-black/10 rounded-xl px-4 py-3 mb-6 focus:outline-none focus:ring-2 focus:ring-olive"
+        placeholder="—"
+        required
+      />
+
+      <label className="block text-sm font-medium mb-2">{t.contacts.message}</label>
+      <textarea
+        className="w-full border border-black/10 rounded-xl px-4 py-3 mb-8 min-h-[140px] focus:outline-none focus:ring-2 focus:ring-olive"
+        placeholder="—"
+      />
+
+      <button
+        type="submit"
+        className="px-6 py-3 rounded-xl bg-olive text-white text-base font-medium hover:opacity-90 transition"
+      >
+        {t.contacts.send}
+      </button>
+    </form>
+  </div>
+</Section>
 
   <footer className="py-10 border-t border-black/5 text-sm"><div className="max-w-6xl mx-auto px-6 flex items-center justify-between"><div>{t.footer.rights}</div><div className="text-slate-500">EN / IT • clvresidents.com</div></div></footer>
  </div>)}
