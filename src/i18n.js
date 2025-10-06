@@ -1,6 +1,19 @@
 // i18n.js — даём ДВА экспорта: named и default, чтобы любой импорт работал
 export const translations = {
   en: {
+        nav: {
+      home: "Home",
+      residences: "Residences",
+      architecture: "Architecture",
+      amenities: "Amenities",
+      location: "Location",
+      floorplans: "Floor Plans",
+      progress: "Progress",
+      faq: "FAQ",
+      contacts: "Contacts",
+      en: "EN",
+      it: "IT"
+    },
     intro: {
       title: "Como Lake View Residents",
       text:
