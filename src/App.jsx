@@ -206,35 +206,38 @@ export default function App() {
 </Section>
 
   <Section id="progress">
-  <div className="grid md:grid-cols-2 gap-8 items-center">
-    <figure className="relative">
+  <div className="grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <h2 className="font-serif text-4xl md:text-5xl mb-6 text-slate-900">
+        {t.progress.title}
+      </h2>
+      <p className="text-lg md:text-xl leading-relaxed text-slate-700 mb-6">
+        {t.progress.text}
+      </p>
+      <div className="grid grid-cols-2 gap-6 mt-8">
+        <div>
+          <div className="text-sm uppercase tracking-wide text-slate-500">{t.progress.etaLabel}</div>
+          <div className="text-2xl font-serif text-slate-900 mt-1">{t.progress.etaValue}</div>
+        </div>
+        <div>
+          <div className="text-sm uppercase tracking-wide text-slate-500">{t.progress.statusLabel}</div>
+          <div className="text-2xl font-serif text-slate-900 mt-1">{t.progress.statusValue}</div>
+        </div>
+      </div>
+      <p className="text-sm text-slate-500 mt-6 italic">
+        {t.progress.note}
+      </p>
+    </div>
+
+    <div className="relative rounded-2xl overflow-hidden shadow-soft border border-black/5">
       <img
         src="/images/0010001.jpg"
         alt={t.progress.imageAlt}
-        className="w-full rounded-2xl shadow-soft"
+        className="w-full h-full object-cover"
       />
-      <figcaption className="absolute bottom-3 left-3 text-xs px-2 py-1 rounded bg-black/60 text-white backdrop-blur">
+      <div className="absolute bottom-0 left-0 right-0 bg-black/60 text-white text-sm px-4 py-2 font-light tracking-wide">
         {t.progress.imageCaption}
-      </figcaption>
-    </figure>
-
-    <div>
-      <h2 className="font-serif text-3xl mb-3">{t.progress.title}</h2>
-      <p className="leading-8 mb-5">{t.progress.text}</p>
-
-      <div className="flex flex-wrap gap-4">
-        <div className="rounded-xl border border-black/5 bg-white px-4 py-3 shadow-soft">
-          <div className="text-xs uppercase tracking-wide text-slate-500">{t.progress.etaLabel}</div>
-          <div className="text-lg font-medium">{t.progress.etaValue}</div>
-        </div>
-
-        <div className="rounded-xl border border-black/5 bg-white px-4 py-3 shadow-soft">
-          <div className="text-xs uppercase tracking-wide text-slate-500">{t.progress.statusLabel}</div>
-          <div className="text-lg font-medium">{t.progress.statusValue}</div>
-        </div>
       </div>
-
-      <p className="text-sm text-slate-600 mt-5">{t.progress.note}</p>
     </div>
   </div>
 </Section>
