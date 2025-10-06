@@ -151,26 +151,58 @@ export default function App() {
   </div>
 </Section>
 
-  <Section id="plans">
-    <h2 className="font-serif text-3xl mb-6">{t.plans.title}</h2>
-    <p className="leading-8">{t.plans.intro}</p>
-    <ul className="mt-4 text-slate-600 text-sm grid md:grid-cols-3 gap-2">
-      {t.plans.levels.map((lv,i)=>(<li key={i} className="bg-white/60 rounded-xl px-3 py-2 border border-black/5">{lv}</li>))}
-    </ul>
-    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
-      {t.plans.units.map((u)=>(
-        <div key={u.code} className="bg-white rounded-2xl border border-black/5 p-4 shadow-soft">
-          <div className="aspect-[4/3] bg-ivory grid place-items-center rounded-xl overflow-hidden">
-            <img src={`/images/plans/units/${u.code}-plan.png`} alt={`${u.code} plan`} className="object-contain w-full h-full"/>
-          </div>
-          <div className="flex items-center justify-between mt-3">
-            <div className="font-medium">{u.code} — {u.label}</div>
-            <a href={`/images/plans/units/${u.code}-plan.png`} download className="text-sm text-olive hover:underline">{t.plans.cta}</a>
-          </div>
+<Section id="plans">
+  <h2 className="font-serif text-3xl md:text-4xl mb-4">{t.plans.title}</h2>
+  <p className="text-lg leading-relaxed text-slate-700 mb-8">{t.plans.intro}</p>
+
+  <div className="grid md:grid-cols-3 gap-4 mb-10">
+    {t.plans.levels.map((lv,i)=>(
+      <div key={i} className="bg-white rounded-2xl p-5 border border-black/5 shadow-soft">
+        <div className="font-medium">{lv.title}</div>
+        <p className="text-slate-700 text-sm mt-2 leading-6">{lv.text}</p>
+      </div>
+    ))}
+  </div>
+
+  <div className="flex flex-wrap gap-2 mb-6">
+    {[{id:"all",label:t.plans.all}, ...t.plans.levelFilters].map(btn=>(
+      <button
+        key={btn.id}
+        onClick={()=>setFilter(btn.id)}
+        className={`px-3 py-1.5 rounded-xl border text-sm ${
+          filter===btn.id ? "bg-slate text-white border-slate" : "bg-white border-black/10 hover:bg-black/5"
+        }`}
+      >
+        {btn.label}
+      </button>
+    ))}
+  </div>
+
+  <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    {t.plans.units
+      .filter(u => filter==="all" ? true : u.level===filter)
+      .map(u=>(
+      <div key={u.code} className="bg-white rounded-2xl border border-black/5 shadow-soft overflow-hidden">
+        <div className="aspect-[4/3] bg-ivory grid place-items-center">
+          {u.image ? (
+            <img src={u.image} alt={`${u.code} plan`} className="object-contain w-full h-full"/>
+          ) : (
+            <div className="text-slate-500 text-sm">{t.plans.comingSoon}</div>
+          )}
         </div>
-      ))}
-    </div>
-  </Section>
+        <div className="p-4">
+          <div className="flex items-center justify-between">
+            <div className="font-medium">{u.code} — {u.title}</div>
+            {u.image && (
+              <a href={u.image} download className="text-sm text-olive hover:underline">{t.plans.cta}</a>
+            )}
+          </div>
+          {u.meta && <div className="text-slate-600 text-sm mt-2">{u.meta}</div>}
+        </div>
+      </div>
+    ))}
+  </div>
+</Section>
 
   <Section id="progress">
     <div className="grid md:grid-cols-2 gap-8 items-center">
