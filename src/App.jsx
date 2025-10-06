@@ -138,11 +138,18 @@ export default function App() {
 </Section>
 
   <Section id="location">
-    <div className="grid md:grid-cols-2 gap-8 items-center">
-      <img src="/images/0010002.jpg" className="w-full rounded-2xl shadow-soft" alt="Location"/>
-      <div><h2 className="font-serif text-3xl mb-4">{t.location.title}</h2><p className="leading-8">{t.location.text}</p></div>
+  <div className="grid md:grid-cols-2 gap-12 items-center">
+    <div className="relative rounded-2xl overflow-hidden shadow-soft border border-black/5">
+      <div className="aspect-[16/10]">
+        <img src="/images/0010002.jpg" alt="Location" className="w-full h-full object-cover"/>
+      </div>
     </div>
-  </Section>
+    <div>
+      <h2 className="font-serif text-3xl md:text-4xl mb-6">{t.location.title}</h2>
+      <p className="text-lg leading-relaxed text-slate-700">{t.location.text}</p>
+    </div>
+  </div>
+</Section>
 
   <Section id="plans">
     <h2 className="font-serif text-3xl mb-6">{t.plans.title}</h2>
